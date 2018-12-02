@@ -253,7 +253,11 @@
         //Ain Drahem
         total[27] = 318172
         paid[27] = 50602
+        //Hammem Sousa
+        total[257] = 5634608
+        paid[257] = 1460059
 
+        
         FOOTBALL_COST = 20000
         STREET_PER_KM_COST = 500
         SCHOOL_REPAIR_COST = 150000
@@ -361,6 +365,7 @@
         }
 
         function showStat(title, id) {
+            console.log(id)
             var defict = total[id] - paid[id]
             $("#stateModal").modal("hide")
             $("#statModal").modal("show")
