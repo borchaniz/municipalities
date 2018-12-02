@@ -2,12 +2,15 @@
 <meta charset="utf-8">
 
 <head>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-    <script src="http://d3js.org/d3.v3.min.js"></script>
-    <script src="http://d3js.org/topojson.v1.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.3/Chart.bundle.min.js"></script>
+        <link rel="icon" 
+              type="image/png" 
+              href="./Logos/LOGO-FINAL-ICON.png">
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <script src="jquery.min.js"></script>
+    <script src="bootstrap.min.js"></script>
+    <script src="d3.v3.min.js"></script>
+    <script src="topojson.v1.min.js"></script>
+    <script src="Chart.min.js"></script>
 </head>
 <style>
     svg {
@@ -15,7 +18,7 @@
     }
 
     path {
-        fill: #ccc;
+        fill : #f05f40;
         stroke: #fff;
         stroke-width: .5px;
     }
@@ -49,9 +52,8 @@
         width: 100vw;
         background-size: cover;
         background-repeat: no-repeat;
-        text-align: center;
-        display: table-cell;
-        vertical-align: middle;
+        
+        
     }
 
     #fact1{
@@ -114,10 +116,16 @@
 
 <body style="width:100vw; overflow-x:hidden;">
     <section style="background-image: url(img/cover_bg_0.jpg);" id="cover">
-        <h1 class="badge badge-pill badge-primary animated bounceIn" style="font-size: 4em; font-weight: normal; padding: 30px 50px;">لازمنا
-            نخلصو بلدياتنا</h1>
-    </section>
-    <section style="background:#f05f40; overflow-x:hidden;" id="fact1">
+        <div class="fixed-top">
+
+        <img  style="margin:10px" width="160px" src="./Logos/LOGO FINAL.png"></img>
+    </div>
+            <div style="margin-top: 120px;
+            text-align:center"><a href="#fact1" class="js-scroll-trigger badge badge-pill badge-primary animated bounceIn" 
+        style="font-size: 4em; font-weight: normal; padding: 30px 50px;">التونسي و الأدآت؟</a></div>
+      </section>
+      <section style="background:#f05f40; overflow-x:hidden;" id="fact1">
+
         <div class="row">
             <div class="col-sm-5"><img src="img/1tnd4.png"> </div>
             <div class="col-sm-7" style="text-align: right">
@@ -127,25 +135,31 @@
                 </div>
             </div>
         </div>
-    </section>
-    <section style="background:url(img/cover_bg_blur.jpg); background-size: cover">
-        <img src="img/municipalite.png" style="width:98vw;margin:80px 0px" />
-    </section>
-    <div class='svg-div'></div>
-    <div class="modal fade" id="stateModal" role="dialog">
-        <div class="modal-dialog">
 
-            <!-- Modal content-->
-            <div class="modal-content">
-                <div class="modal-header">
-                    <button type="button" class="close" data-dismiss="modal">&times;</button>
-                    <h4 class="modal-title" id="state_modal_title">Modal Header</h4>
-                </div>
-                <div class="modal-body" id="state_modal_body">
-
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </section>
+      <section style="background:url(img/cover_bg_blur.jpg); background-size: cover">
+        <img src="img/municipalite.png" style="width:98vw;margin:80px 0px"/>
+      </section>
+      <div style="text-align: center">  
+      <div class='svg-div' style="margin-top:-45%; margin-left:-35px
+      
+      "></div>
+        </div>
+        <div class="modal fade" id="stateModal" role="dialog">
+            <div class="modal-dialog">
+    
+                <!-- Modal content-->
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                        <h4 class="modal-title" id="state_modal_title">Modal Header</h4>
+                    </div>
+                    <div class="modal-body" id="state_modal_body">
+    
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                    </div>
                 </div>
             </div>
 
@@ -163,19 +177,13 @@
                 <div class="modal-body" id="stat_modal_body" dir="rtl">
                     <div class="row" id="graph-container"><canvas id="pie-chart" width="300" height="300"></canvas></div>
                     <div class="row" style="text-align:center;">
+                        
                         <div class="col-sm-3">
                             <img src="img/stadium.png" class="modalImg">
                             <div class="imgLbl">
                                 <strong id="stat_football"></strong> تيرانات
                             </div>
                         </div>
-                        <div class="col-sm-3">
-                            <img src="img/deficit.png" class="modalImg">
-                            <div class="imgLbl">
-                                عجز بقيمة <strong id="defict_amount"></strong> دينار
-                            </div>
-                        </div>
-
                         <div class="col-sm-3">
                             <img src="img/road.png" class="modalImg">
                             <div class="imgLbl">
@@ -188,6 +196,14 @@
                                 <strong id="stat_school"></strong> مدرسة
                             </div>
                         </div>
+
+                        <div class="col-sm-3">
+                            <img src="img/deficit.png" class="modalImg">
+                            <div class="imgLbl">
+                                فلوس مش خالصة بقيمة <strong id="defict_amount"></strong> دينار
+                            </div>
+                        </div>
+
                     </div>
                 </div>
                 <div class="modal-footer">
@@ -370,6 +386,8 @@
 
         drawTUN(".svg-div")
     </script>
+    <script src="js/scrolling-nav.js"></script>
+
     <div id="stats">
 
     </div>
