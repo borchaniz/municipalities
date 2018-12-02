@@ -4,13 +4,13 @@
 <head>
         <link rel="icon" 
               type="image/png" 
-              href="./Logos/LOGO-FINAL-ICON.png">
-    <link rel="stylesheet" href="bootstrap.min.css">
-    <script src="jquery.min.js"></script>
-    <script src="bootstrap.min.js"></script>
-    <script src="d3.v3.min.js"></script>
-    <script src="topojson.v1.min.js"></script>
-    <script src="Chart.min.js"></script>
+              href="img/LOGO-FINAL-ICON.png">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/d3.v3.min.js"></script>
+    <script src="js/topojson.v1.min.js"></script>
+    <script src="js/Chart.min.js"></script>
 </head>
 <style>
     svg {
@@ -251,7 +251,7 @@
             var svg = d3.select(selector).append("svg")
                 .attr("width", width)
                 .attr("height", height);
-            d3.json("tunisia_formatted.json", function (error, topology) {
+            d3.json("cities/tunisia_formatted.json", function (error, topology) {
                 console.clear();
                 var featureCollection = topojson.feature(topology, topology.objects.governorates);
                 var bounds = d3.geo.bounds(featureCollection);
@@ -305,7 +305,7 @@
             var svg = d3.select(selector).append("svg")
                 .attr("width", width)
                 .attr("height", height);
-            d3.json(state[id] + ".json", function (error, topology) {
+            d3.json("cities/"+state[id] + ".json", function (error, topology) {
                 console.clear();
                 var featureCollection = topojson.feature(topology, topology.objects.delegates);
                 var bounds = d3.geo.bounds(featureCollection);
@@ -360,7 +360,7 @@
                     labels: ["خالص (بالدينار)", "مش خالص (بالدينار)"],
                     datasets: [{
                         backgroundColor: ["#6380E9", "#FF003B"],
-                        data: [paid[id], total[id]]
+                        data: [paid[id], defict]
                     }]
                 },
                 options: {

@@ -29,9 +29,9 @@ You only need to install python on your machine and add it to your environment v
 Yessine Borchani, Ahmed Ben Neji, Kais Ben Daamech, Nadhem Maaloul
 
 ## Project Description:
-The website contains multiple sections: <br/>
+The website contains multiple sections:
 1- A greeting cover containing the logo...<br/>
 2- List of facts such as the amount of taxes paid compared to the amount of investement of the municipality in the projects improving the situation of the region.<br/>
 The previous sections were done using bootstrap.<br/>
 3- An interactive map of Tunisia in which, clicking a state opens a popup, allowing the user to choose the municipality he wants. Upon choosing the municipality, another window pops up visualizing for him the data in terms of potential projects that can be performed in his regin such as building schools, building football stadiums (with football being by far the tunisian's most preferable sport).
-This part was done using Python to parse the data, get conclusions, generate pie charts and D3JS to display the interactive map.<br/>
+This part was done using Python to parse the data, get conclusions, generate pie charts and D3JS to display the interactive map. 
