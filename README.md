@@ -29,7 +29,7 @@ You only need to install python on your machine and add it to your environment v
 Yessine Borchani, Ahmed Ben Neji, Kais Ben Daamech, Nadhem Maaloul
 
 ## Project Description:
-The website contains multiple sections:
+The website contains multiple sections:<br/>
 1- A greeting cover containing the logo...<br/>
 2- List of facts such as the amount of taxes paid compared to the amount of investement of the municipality in the projects improving the situation of the region.<br/>
 The previous sections were done using bootstrap.<br/>
