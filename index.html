@@ -84,7 +84,7 @@
 
 
     .modalImg{
-        height:120px;
+        height:80px;
     }
 
     .col-md-6{
@@ -95,10 +95,15 @@
         font-size: 1.6em;
         color:#f05f40;
         padding-top:20px;
-        padding-bottom:50px;
         font-weight: 600;
     }
-
+    canvas {
+    padding-left: 0;
+    padding-right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    }
     @font-face {
 	font-family: 'ar-font';
 	src:url('Cairo-Black.ttf');
@@ -110,6 +115,7 @@
 
 <body style="width:100vw; overflow-x:hidden;">
     <section style="background-image: url(img/cover_bg_0.jpg);" id="cover">
+<<<<<<< HEAD
         <div class="fixed-top">
 
         <img  style="margin:10px" width="160px" src="./Logos/LOGO FINAL.png"></img>
@@ -119,15 +125,22 @@
         style="font-size: 4em; font-weight: normal; padding: 30px 50px;">التونسي و الأدآت؟</a></div>
       </section>
       <section style="background:#f05f40; overflow-x:hidden;" id="fact1">
+=======
+        <h1 class="badge badge-pill badge-primary animated bounceIn" style="font-size: 4em; font-weight: normal; padding: 30px 50px;">لازمنا
+            نخلصو بلدياتنا</h1>
+    </section>
+    <section style="background:#f05f40; overflow-x:hidden;" id="fact1">
+>>>>>>> 98cc15c6756bfebf72867680ad80bf56d950b822
         <div class="row">
-          <div class="col-sm-5"><img src="img/1tnd4.png" > </div>
-          <div class="col-sm-7" style="text-align: right">
-            <div style="text-align: center">
-              <h1 class="badge badge-pill badge-primary animated bounceIn">في بالـك؟</h1>
-              <h4>على كل دينار تخلصو لبلديتك، الدولة تعطي لبلديتك أربعة دينارات</h4>
+            <div class="col-sm-5"><img src="img/1tnd4.png"> </div>
+            <div class="col-sm-7" style="text-align: right">
+                <div style="text-align: center">
+                    <h1 class="badge badge-pill badge-primary animated bounceIn">في بالـك؟</h1>
+                    <h4>على كل دينار تخلصو لبلديتك، الدولة تعطي لبلديتك أربعة دينارات</h4>
+                </div>
             </div>
-          </div>
         </div>
+<<<<<<< HEAD
       </section>
       <section style="background:url(img/cover_bg_blur.jpg); background-size: cover">
         <img src="img/municipalite.png" style="width:98vw;margin:80px 0px"/>
@@ -152,74 +165,98 @@
                     <div class="modal-footer">
                         <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
                     </div>
+=======
+    </section>
+    <section style="background:url(img/cover_bg_blur.jpg); background-size: cover">
+        <img src="img/municipalite.png" style="width:98vw;margin:80px 0px" />
+    </section>
+    <div class='svg-div'></div>
+    <div class="modal fade" id="stateModal" role="dialog">
+        <div class="modal-dialog">
+
+            <!-- Modal content-->
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <h4 class="modal-title" id="state_modal_title">Modal Header</h4>
                 </div>
-    
+                <div class="modal-body" id="state_modal_body">
+
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+>>>>>>> 98cc15c6756bfebf72867680ad80bf56d950b822
+                </div>
             </div>
+
         </div>
-        <div class="modal fade" id="statModal" role="dialog">
-            <div class="modal-dialog">
-    
-                <!-- Modal content-->
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <button type="button" class="close" data-dismiss="modal">&times;</button>
-                        <h4 class="modal-title" id="stat_modal_title">Modal Header</h4>
-                    </div>
+    </div>
+    <div class="modal fade" id="statModal" role="dialog">
+        <div class="modal-dialog">
 
-
-                    <div class="modal-body" id="stat_modal_body" dir="rtl">
-                        
-                    <div class="row">
-                        <div class="col-md-6">
-                                <img src="img/stadium.png" class="modalImg">
-                                <br>
-                                <div class="imgLbl">
+            <!-- Modal content-->
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <h4 class="modal-title" id="stat_modal_title">Modal Header</h4>
+                </div>
+                <div class="modal-body" id="stat_modal_body" dir="rtl">
+                    <div class="row"><canvas id="pie-chart" width="300" height="300"></canvas></div>
+                    <div class="row" style="text-align:center;">
+                        <div class="col-sm-3">
+                            <img src="img/stadium.png" class="modalImg">
+                            <div class="imgLbl">
                                 <strong id="stat_football"></strong> تيرانات
-                                </div>
-                        </div>    
-                        <div class="col-md-6" >
-                                <img src="img/deficit.png"class="modalImg">
-                                <br>
-                                <div class="imgLbl">
-                                    عجز بقيمة <strong id="defict_amount"></strong> دينار    
-                                </div>
-                            </div>   
-                    </div>
-
-                    <div class="row">
-                            <div class="col-md-6">
-                                    <img src="img/road.png" class="modalImg">
-                                    <br>
-                                    <div class="imgLbl">
-                                        تكيس <strong id="stat_street"></strong> كم
-                                    </div>
-                            </div>    
-                            <div class="col-md-6">
-                                    <img src="img/school.png"class="modalImg">
-                                    <br>
-                                    <div class="imgLbl">
-                                        <strong id="stat_school"></strong> مكتب
-                                    </div>
-                            </div>   
+                            </div>
+                        </div>
+                        <div class="col-sm-3">
+                            <img src="img/deficit.png" class="modalImg">
+                            <div class="imgLbl">
+                                عجز بقيمة <strong id="defict_amount"></strong> دينار
+                            </div>
                         </div>
 
-                    
-                    </div>
-                    <div class="modal-footer">
-                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                        <div class="col-sm-3">
+                            <img src="img/road.png" class="modalImg">
+                            <div class="imgLbl">
+                                تكيس <strong id="stat_street"></strong> كم
+                            </div>
+                        </div>
+                        <div class="col-sm-3">
+                            <img src="img/school.png" class="modalImg">
+                            <div class="imgLbl">
+                                <strong id="stat_school"></strong> مدرسة
+                            </div>
+                        </div>
                     </div>
                 </div>
-    
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
             </div>
+
         </div>
+    </div>
     <script>
-        state = ['Tunis', 'Ariana', 'Ben Arous', 'Manubah', 'Nabeul', 'Zaghouan', 'Bizerte', 'Béja', 'Jendouba', 'Le Kef', 'Siliana', 'Sousse', 'Monastir', 'Mahdia', 'Sfax', 'Kairouan', 'Kassérine', 'Sidi Bou Zid', 'Gabès', 'Médenine', 'Tataouine', 'Gafsa', 'Tozeur', 'Kebili']
-        scale = [120000,   80000,    70000,       60000,     30000,    30000,      27000,     30000,  30000,      30000,    20000,     21000,    30000,      30000,    20000,  20000,      20000,       19000,          20000,   14000,      7500,       30000,   20000,    12000]
-        w = [900, 900, 900, 900, 900, 900, 900, 900, 900, 900, 900, 900, 900, 900, 900, 900, 900, 900, 900, 900, 900, 900, 900, 900, 900, 900, 900, 900, 900, 900, 900, 900, 900, 900, 900, 900, 900, 900, 900, 900, 900, 900, 900, 900, 900, 900, 900, 900, 900, 900, 900, 900, 900]
-        h = [700, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500]
+        state = ['Tunis', 'Ariana', 'Ben Arous', 'Manubah', 'Nabeul', 'Zaghouan', 'Bizerte', 'Béja', 'Jendouba',
+            'Le Kef', 'Siliana', 'Sousse', 'Monastir', 'Mahdia', 'Sfax', 'Kairouan', 'Kassérine', 'Sidi Bou Zid',
+            'Gabès', 'Médenine', 'Tataouine', 'Gafsa', 'Tozeur', 'Kebili'
+        ]
+        scale = [120000, 80000, 70000, 60000, 30000, 30000, 27000, 30000, 30000, 30000, 20000, 21000, 30000, 30000,
+            20000, 20000, 20000, 19000, 20000, 14000, 7500, 30000, 20000, 12000
+        ]
+        w = [900, 900, 900, 900, 900, 900, 900, 900, 900, 900, 900, 900, 900, 900, 900, 900, 900, 900, 900, 900, 900,
+            900, 900, 900, 900, 900, 900, 900, 900, 900, 900, 900, 900, 900, 900, 900, 900, 900, 900, 900, 900, 900,
+            900, 900, 900, 900, 900, 900, 900, 900, 900, 900, 900
+        ]
+        h = [700, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500,
+            500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500,
+            500, 500, 500, 500, 500, 500, 500, 500, 500
+        ]
         FOOTBALL_COST = 300
         STREET_PER_KM_COST = 10
         SCHOOL_REPAIR_COST = 50
+<<<<<<< HEAD
             function drawTUN(selector) {
                 var width = 250,
                     height = 550;
@@ -270,16 +307,70 @@
                         });
                 });
             }
+=======
+        function drawTUN(selector) {
+            var width = 1300,
+                height = 500;
+            var path = d3.geo.path();
+            var svg = d3.select(selector).append("svg")
+                .attr("width", width)
+                .attr("height", height);
+            d3.json("tunisia_formatted.json", function (error, topology) {
+                console.clear();
+                var featureCollection = topojson.feature(topology, topology.objects.governorates);
+                var bounds = d3.geo.bounds(featureCollection);
+
+                var centerX = d3.sum(bounds, function (d) {
+                        return d[0];
+                    }) / 2,
+                    centerY = d3.sum(bounds, function (d) {
+                        return d[1];
+                    }) / 2;
+
+                var projection = d3.geo.mercator()
+                    .scale(3100)
+                    .center([centerX, centerY])
+                    .translate([width / 2, height / 2]);
+
+                path.projection(projection);
+                var tooltip = d3.select(selector).append("div")
+                    .attr("class", "tooltip")
+                    .style("opacity", 0);
+                svg.selectAll("path")
+                    .data(featureCollection.features)
+                    .enter().append("path")
+                    .attr("d", path)
+                    .on("mouseover", function (d) {
+                        tooltip.transition()
+                            .duration(200)
+                            .style("opacity", .9);
+                        tooltip.html(d.properties.gov_name_a)
+                            .style("left", (d3.event.layerX) + "px")
+                            .style("top", (d3.event.layerY - 28) + "px");
+                    })
+                    .on("mouseout", function (d) {
+                        tooltip.transition()
+                            .duration(500)
+                            .style("opacity", 0);
+                    })
+                    .on("click", function (d) {
+                        showState(d.properties.gov_name_a, d.id)
+                    });
+            });
+        }
+>>>>>>> 98cc15c6756bfebf72867680ad80bf56d950b822
 
         function drawState(selector, id) {
-            $(".modal-content").css({'width':w[id]})
+            $(".modal-content").css({
+                'width': w[id]
+            })
             var width = w[id],
                 height = h[id];
             var path = d3.geo.path();
             var svg = d3.select(selector).append("svg")
                 .attr("width", width)
                 .attr("height", height);
-            d3.json(state[id]+".json", function (error, topology) {
+            d3.json(state[id] + ".json", function (error, topology) {
                 console.clear();
                 var featureCollection = topojson.feature(topology, topology.objects.delegates);
                 var bounds = d3.geo.bounds(featureCollection);
@@ -307,9 +398,9 @@
                             .duration(200)
                             .style("opacity", .9);
 
-                            console.log(d3.event)
-                            console.log(d3.event.layerX)
-                            console.log(d3.event.layerY)
+                        console.log(d3.event)
+                        console.log(d3.event.layerX)
+                        console.log(d3.event.layerY)
                         tooltip.html(d.properties.deleg_name)
                             .style("left", (d3.event.offsetX) + "px")
                             .style("top", (d3.event.offsetY) + "px");
@@ -325,20 +416,49 @@
             });
         }
 
-        function showStat(title){
+        function showStat(title) {
             var defict = 1000
             $("#stateModal").modal("hide")
             $("#statModal").modal("show")
             $("#stat_modal_title").html(title)
+            new Chart(document.getElementById("pie-chart"), {
+                type: 'pie',
+                data: {
+                    labels: ["خالص", "مش خالص"],
+                    datasets: [{
+                        backgroundColor: ["#6380E9", "#FF003B"],
+                        data: [2478, 5267]
+                    }]
+                },
+                options: {
+                    title: {
+                        display: true,
+                        text: 'قداش قاعدين نخلصوا'
+                    },
+                    responsive: false, maintainAspectRatio: true    
+                }
+            })
             var football_count = Math.floor(defict / FOOTBALL_COST)
             var street_km_count = Math.floor(defict / STREET_PER_KM_COST)
             var school_count = Math.floor(defict / SCHOOL_REPAIR_COST)
             $('#football_images').html("")
             $('#street_images').html("")
             $('#school_images').html("")
-            for(var i=0;i<football_count;++i) $('#football_images').prepend($('<img>',{src:'football.png', height:30, width:30}))
-            for(var i=0;i<street_km_count;++i) $('#street_images').prepend($('<img>',{src:'street.png', height:30, width:30}))
-            for(var i=0;i<school_count;++i) $('#school_images').prepend($('<img>',{src:'school.png', height:30, width:30}))
+            for (var i = 0; i < football_count; ++i) $('#football_images').prepend($('<img>', {
+                src: 'football.png',
+                height: 30,
+                width: 30
+            }))
+            for (var i = 0; i < street_km_count; ++i) $('#street_images').prepend($('<img>', {
+                src: 'street.png',
+                height: 30,
+                width: 30
+            }))
+            for (var i = 0; i < school_count; ++i) $('#school_images').prepend($('<img>', {
+                src: 'school.png',
+                height: 30,
+                width: 30
+            }))
             $("#defict_amount").html(defict)
             $("#stat_football").html(football_count)
             $("#stat_school").html(school_count)
