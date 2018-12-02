@@ -161,7 +161,7 @@
                     <h4 class="modal-title" id="stat_modal_title">Modal Header</h4>
                 </div>
                 <div class="modal-body" id="stat_modal_body" dir="rtl">
-                    <div class="row"><canvas id="pie-chart" width="300" height="300"></canvas></div>
+                    <div class="row" id="graph-container"><canvas id="pie-chart" width="300" height="300"></canvas></div>
                     <div class="row" style="text-align:center;">
                         <div class="col-sm-3">
                             <img src="img/stadium.png" class="modalImg">
@@ -202,7 +202,7 @@
             'Le Kef', 'Siliana', 'Sousse', 'Monastir', 'Mahdia', 'Sfax', 'Kairouan', 'Kassérine', 'Sidi Bou Zid',
             'Gabès', 'Médenine', 'Tataouine', 'Gafsa', 'Tozeur', 'Kebili'
         ]
-        scale = [120000, 80000, 70000, 60000, 30000, 30000, 27000, 30000, 30000, 30000, 20000, 21000, 30000, 30000,
+        scale = [120000, 70000, 70000, 60000, 30000, 30000, 27000, 30000, 30000, 30000, 20000, 21000, 30000, 30000,
             20000, 20000, 20000, 19000, 20000, 14000, 7500, 30000, 20000, 12000
         ]
         w = [900, 900, 900, 900, 900, 900, 900, 900, 900, 900, 900, 900, 900, 900, 900, 900, 900, 900, 900, 900, 900,
@@ -213,9 +213,18 @@
             500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500,
             500, 500, 500, 500, 500, 500, 500, 500, 500
         ]
-        FOOTBALL_COST = 300
-        STREET_PER_KM_COST = 10
-        SCHOOL_REPAIR_COST = 50
+        paid = new Array(300)
+        total = new Array(300)
+        //Ariana City
+        total[9] = 12916000
+        paid[9] = 5166400
+        //Ain Drahem
+        total[27] = 318172
+        paid[27] = 50602
+
+        FOOTBALL_COST = 20000
+        STREET_PER_KM_COST = 500
+        SCHOOL_REPAIR_COST = 150000
         function drawTUN(selector) {
             var width = 1300,
                 height = 500;
@@ -304,10 +313,6 @@
                         tooltip.transition()
                             .duration(200)
                             .style("opacity", .9);
-
-                        console.log(d3.event)
-                        console.log(d3.event.layerX)
-                        console.log(d3.event.layerY)
                         tooltip.html(d.properties.deleg_name)
                             .style("left", (d3.event.offsetX) + "px")
                             .style("top", (d3.event.offsetY) + "px");
@@ -318,23 +323,25 @@
                             .style("opacity", 0);
                     })
                     .on("click", function (d) {
-                        showStat(d.properties.deleg_name)
+                        showStat(d.properties.deleg_name, d.id)
                     })
             });
         }
 
-        function showStat(title) {
-            var defict = 1000
+        function showStat(title, id) {
+            var defict = total[id] - paid[id]
             $("#stateModal").modal("hide")
             $("#statModal").modal("show")
             $("#stat_modal_title").html(title)
+            $("#pie-chart").remove()
+            $("#graph-container").append('<canvas id="pie-chart" width="300" height="300"></canvas>')
             new Chart(document.getElementById("pie-chart"), {
                 type: 'pie',
                 data: {
-                    labels: ["خالص", "مش خالص"],
+                    labels: ["خالص (بالدينار)", "مش خالص (بالدينار)"],
                     datasets: [{
                         backgroundColor: ["#6380E9", "#FF003B"],
-                        data: [2478, 5267]
+                        data: [paid[id], total[id]]
                     }]
                 },
                 options: {
@@ -348,24 +355,6 @@
             var football_count = Math.floor(defict / FOOTBALL_COST)
             var street_km_count = Math.floor(defict / STREET_PER_KM_COST)
             var school_count = Math.floor(defict / SCHOOL_REPAIR_COST)
-            $('#football_images').html("")
-            $('#street_images').html("")
-            $('#school_images').html("")
-            for (var i = 0; i < football_count; ++i) $('#football_images').prepend($('<img>', {
-                src: 'football.png',
-                height: 30,
-                width: 30
-            }))
-            for (var i = 0; i < street_km_count; ++i) $('#street_images').prepend($('<img>', {
-                src: 'street.png',
-                height: 30,
-                width: 30
-            }))
-            for (var i = 0; i < school_count; ++i) $('#school_images').prepend($('<img>', {
-                src: 'school.png',
-                height: 30,
-                width: 30
-            }))
             $("#defict_amount").html(defict)
             $("#stat_football").html(football_count)
             $("#stat_school").html(school_count)
