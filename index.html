@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<meta charset="utf-8">
+
+<head>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="http://d3js.org/d3.v3.min.js"></script>
+    <script src="http://d3js.org/topojson.v1.min.js"></script>
+</head>
+<style>
+    svg {
+        /* border: 1px solid #ccc; */
+    }
+
+    path {
+        fill: #ccc;
+        stroke: #fff;
+        stroke-width: .5px;
+    }
+
+    path:hover {
+        fill: #00AEEC;
+    }
+
+    div.tooltip {
+        position: absolute;
+        text-align: center;
+        height: 18px;
+        padding: 4px;
+        margin: 2px;
+        font: 12px sans-serif;
+        background: #fff;
+        border: 0px;
+        pointer-events: none;
+    }
+    .modal
+    {
+    position: fixed;
+    left: -25%;
+    }
+    .modal-title{
+        text-align: center;
+    }
+
+    #cover{
+        height: 100vh;
+        width: 100vw;
+        background-size: cover;
+        background-repeat: no-repeat;
+        text-align: center;
+        display: table-cell;
+        vertical-align: middle;
+    }
+
+    #fact1{
+        background-color: #f05f40;
+    }
+
+    .badge {
+        font-size: 2em;
+        font-weight: normal;
+        padding: 15px 30px;
+        text-align: center;
+        margin-top: 40px;
+        background-color: #f05f40;
+    }
+
+    #fact1 img {
+        width: 100%;
+        padding-left: 10%;
+        padding-top: 10%;
+        padding-bottom: 10%
+    }
+
+    #fact1 h4{
+        margin-top: 40px;
+        color: white;
+        font-size: 2.4em;
+        padding: 0px 60px;
+    }
+
+
+    .modalImg{
+        height:120px;
+    }
+
+    .col-md-6{
+        text-align: center;
+    }
+
+    .imgLbl{
+        font-size: 1.6em;
+        color:#f05f40;
+        padding-top:20px;
+        padding-bottom:50px;
+        font-weight: 600;
+    }
+
+    @font-face {
+	font-family: 'ar-font';
+	src:url('Cairo-Black.ttf');
+	font-weight: lighter;
+	font-style: normal;
+}
+*{font-family: ar-font}
+</style>
+
+<body style="width:100vw; overflow-x:hidden;">
+    <section style="background-image: url(img/cover_bg_0.jpg);" id="cover">
+        <h1 class="badge badge-pill badge-primary animated bounceIn" style="font-size: 4em; font-weight: normal; padding: 30px 50px;">لازمنا نخلصو بلدياتنا</h1>
+      </section>   
+      <section style="background:#f05f40; overflow-x:hidden;" id="fact1">
+        <div class="row">
+          <div class="col-sm-5"><img src="img/1tnd4.png" > </div>
+          <div class="col-sm-7" style="text-align: right">
+            <div style="text-align: center">
+              <h1 class="badge badge-pill badge-primary animated bounceIn">في بالـك؟</h1>
+              <h4>على كل دينار تخلصو لبلديتك، الدولة تعطي لبلديتك أربعة دينارات</h4>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section style="background:url(img/cover_bg_blur.jpg); background-size: cover">
+        <img src="img/municipalite.png" style="width:98vw;margin:80px 0px"/>
+      </section>
+        <div class='svg-div'></div>
+        <div class="modal fade" id="stateModal" role="dialog">
+            <div class="modal-dialog">
+    
+                <!-- Modal content-->
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                        <h4 class="modal-title" id="state_modal_title">Modal Header</h4>
+                    </div>
+                    <div class="modal-body" id="state_modal_body">
+    
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+    
+            </div>
+        </div>
+        <div class="modal fade" id="statModal" role="dialog">
+            <div class="modal-dialog">
+    
+                <!-- Modal content-->
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                        <h4 class="modal-title" id="stat_modal_title">Modal Header</h4>
+                    </div>
+
+
+                    <div class="modal-body" id="stat_modal_body" dir="rtl">
+                        
+                    <div class="row">
+                        <div class="col-md-6">
+                                <img src="img/stadium.png" class="modalImg">
+                                <br>
+                                <div class="imgLbl">
+                                <strong id="stat_football"></strong> تيرانات
+                                </div>
+                        </div>    
+                        <div class="col-md-6" >
+                                <img src="img/deficit.png"class="modalImg">
+                                <br>
+                                <div class="imgLbl">
+                                    عجز بقيمة <strong id="defict_amount"></strong> دينار    
+                                </div>
+                            </div>   
+                    </div>
+
+                    <div class="row">
+                            <div class="col-md-6">
+                                    <img src="img/road.png" class="modalImg">
+                                    <br>
+                                    <div class="imgLbl">
+                                        تكيس <strong id="stat_street"></strong> كم
+                                    </div>
+                            </div>    
+                            <div class="col-md-6">
+                                    <img src="img/school.png"class="modalImg">
+                                    <br>
+                                    <div class="imgLbl">
+                                        <strong id="stat_school"></strong> مكتب
+                                    </div>
+                            </div>   
+                        </div>
+
+                    
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+    
+            </div>
+        </div>
+    <script>
+        state = ['Tunis', 'Ariana', 'Ben Arous', 'Manubah', 'Nabeul', 'Zaghouan', 'Bizerte', 'Béja', 'Jendouba', 'Le Kef', 'Siliana', 'Sousse', 'Monastir', 'Mahdia', 'Sfax', 'Kairouan', 'Kassérine', 'Sidi Bou Zid', 'Gabès', 'Médenine', 'Tataouine', 'Gafsa', 'Tozeur', 'Kebili']
+        scale = [120000,   80000,    70000,       60000,     30000,    30000,      27000,     30000,  30000,      30000,    20000,     21000,    30000,      30000,    20000,  20000,      20000,       19000,          20000,   14000,      7500,       30000,   20000,    12000]
+        w = [900, 900, 900, 900, 900, 900, 900, 900, 900, 900, 900, 900, 900, 900, 900, 900, 900, 900, 900, 900, 900, 900, 900, 900, 900, 900, 900, 900, 900, 900, 900, 900, 900, 900, 900, 900, 900, 900, 900, 900, 900, 900, 900, 900, 900, 900, 900, 900, 900, 900, 900, 900, 900]
+        h = [700, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500]
+        FOOTBALL_COST = 300
+        STREET_PER_KM_COST = 10
+        SCHOOL_REPAIR_COST = 50
+            function drawTUN(selector) {
+                var width = 1300,
+                    height = 500;
+                var path = d3.geo.path();
+                var svg = d3.select(selector).append("svg")
+                    .attr("width", width)
+                    .attr("height", height);
+                d3.json("tunisia_formatted.json", function (error, topology) {
+                    console.clear();
+                    var featureCollection = topojson.feature(topology, topology.objects.governorates);
+                    var bounds = d3.geo.bounds(featureCollection);
+    
+                    var centerX = d3.sum(bounds, function (d) {
+                            return d[0];
+                        }) / 2,
+                        centerY = d3.sum(bounds, function (d) {
+                            return d[1];
+                        }) / 2;
+
+                    var projection = d3.geo.mercator()
+                        .scale(3100)
+                        .center([centerX, centerY])
+                        .translate([width / 2, height / 2]);
+    
+                    path.projection(projection);
+                    var tooltip = d3.select(selector).append("div")
+                        .attr("class", "tooltip")
+                        .style("opacity", 0);
+                    svg.selectAll("path")
+                        .data(featureCollection.features)
+                        .enter().append("path")
+                        .attr("d", path)
+                        .on("mouseover", function (d) {
+                            tooltip.transition()
+                                .duration(200)
+                                .style("opacity", .9);
+                            tooltip.html(d.properties.gov_name_a)
+                                .style("left", (d3.event.layerX) + "px")
+                                .style("top", (d3.event.layerY - 28) + "px");
+                        })
+                        .on("mouseout", function (d) {
+                            tooltip.transition()
+                                .duration(500)
+                                .style("opacity", 0);
+                        })
+                        .on("click", function (d) {
+                            showState(d.properties.gov_name_a,d.id)
+                        });
+                });
+            }
+
+        function drawState(selector, id) {
+            $(".modal-content").css({'width':w[id]})
+            var width = w[id],
+                height = h[id];
+            var path = d3.geo.path();
+            var svg = d3.select(selector).append("svg")
+                .attr("width", width)
+                .attr("height", height);
+            d3.json(state[id]+".json", function (error, topology) {
+                console.clear();
+                var featureCollection = topojson.feature(topology, topology.objects.delegates);
+                var bounds = d3.geo.bounds(featureCollection);
+                var centerX = d3.sum(bounds, function (d) {
+                        return d[0];
+                    }) / 2,
+                    centerY = d3.sum(bounds, function (d) {
+                        return d[1];
+                    }) / 2;
+                var projection = d3.geo.mercator()
+                    .scale(scale[id])
+                    .center([centerX, centerY])
+                    .translate([width / 2, height / 2]);
+
+                path.projection(projection);
+                var tooltip = d3.select(selector).append("div")
+                    .attr("class", "tooltip")
+                    .style("opacity", 0);
+                svg.selectAll("path")
+                    .data(featureCollection.features)
+                    .enter().append("path")
+                    .attr("d", path)
+                    .on("mouseover", function (d) {
+                        tooltip.transition()
+                            .duration(200)
+                            .style("opacity", .9);
+
+                            console.log(d3.event)
+                            console.log(d3.event.layerX)
+                            console.log(d3.event.layerY)
+                        tooltip.html(d.properties.deleg_name)
+                            .style("left", (d3.event.offsetX) + "px")
+                            .style("top", (d3.event.offsetY) + "px");
+                    })
+                    .on("mouseout", function (d) {
+                        tooltip.transition()
+                            .duration(500)
+                            .style("opacity", 0);
+                    })
+                    .on("click", function (d) {
+                        showStat(d.properties.deleg_name)
+                    })
+            });
+        }
+
+        function showStat(title){
+            var defict = 1000
+            $("#stateModal").modal("hide")
+            $("#statModal").modal("show")
+            $("#stat_modal_title").html(title)
+            var football_count = Math.floor(defict / FOOTBALL_COST)
+            var street_km_count = Math.floor(defict / STREET_PER_KM_COST)
+            var school_count = Math.floor(defict / SCHOOL_REPAIR_COST)
+            $('#football_images').html("")
+            $('#street_images').html("")
+            $('#school_images').html("")
+            for(var i=0;i<football_count;++i) $('#football_images').prepend($('<img>',{src:'football.png', height:30, width:30}))
+            for(var i=0;i<street_km_count;++i) $('#street_images').prepend($('<img>',{src:'street.png', height:30, width:30}))
+            for(var i=0;i<school_count;++i) $('#school_images').prepend($('<img>',{src:'school.png', height:30, width:30}))
+            $("#defict_amount").html(defict)
+            $("#stat_football").html(football_count)
+            $("#stat_school").html(school_count)
+            $("#stat_street").html(street_km_count)
+        }
+
+        function showState(title, id) {
+            $("#stateModal").modal("show")
+            $("#state_modal_body").html("")
+            $("#state_modal_title").html(title)
+            drawState("#state_modal_body", id)
+        }
+
+        drawTUN(".svg-div")
+    </script>
+    <div id="stats">
+
+    </div>
+</body>
+
+</html>
