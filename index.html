@@ -2,6 +2,9 @@
 <meta charset="utf-8">
 
 <head>
+        <link rel="icon" 
+              type="image/png" 
+              href="./Logos/LOGO-FINAL-ICON.png">
     <link rel="stylesheet" href="bootstrap.min.css">
     <script src="jquery.min.js"></script>
     <script src="bootstrap.min.js"></script>
@@ -14,7 +17,7 @@
     }
 
     path {
-        fill: #ccc;
+        fill : #f05f40;
         stroke: #fff;
         stroke-width: .5px;
     }
@@ -48,9 +51,8 @@
         width: 100vw;
         background-size: cover;
         background-repeat: no-repeat;
-        text-align: center;
-        display: table-cell;
-        vertical-align: middle;
+        
+        
     }
 
     #fact1{
@@ -108,8 +110,14 @@
 
 <body style="width:100vw; overflow-x:hidden;">
     <section style="background-image: url(img/cover_bg_0.jpg);" id="cover">
-        <h1 class="badge badge-pill badge-primary animated bounceIn" style="font-size: 4em; font-weight: normal; padding: 30px 50px;">لازمنا نخلصو بلدياتنا</h1>
-      </section>   
+        <div class="fixed-top">
+
+        <img  style="margin:10px" width="160px" src="./Logos/LOGO FINAL.png"></img>
+    </div>
+            <div style="margin-top: 120px;
+            text-align:center"><a href="#fact1" class="js-scroll-trigger badge badge-pill badge-primary animated bounceIn" 
+        style="font-size: 4em; font-weight: normal; padding: 30px 50px;">التونسي و الأدآت؟</a></div>
+      </section>
       <section style="background:#f05f40; overflow-x:hidden;" id="fact1">
         <div class="row">
           <div class="col-sm-5"><img src="img/1tnd4.png" > </div>
@@ -124,7 +132,11 @@
       <section style="background:url(img/cover_bg_blur.jpg); background-size: cover">
         <img src="img/municipalite.png" style="width:98vw;margin:80px 0px"/>
       </section>
-        <div class='svg-div'></div>
+      <div style="text-align: center">  
+      <div class='svg-div' style="margin-top:-45%; margin-left:-35px
+      
+      "></div>
+        </div>
         <div class="modal fade" id="stateModal" role="dialog">
             <div class="modal-dialog">
     
@@ -209,8 +221,8 @@
         STREET_PER_KM_COST = 10
         SCHOOL_REPAIR_COST = 50
             function drawTUN(selector) {
-                var width = 1300,
-                    height = 500;
+                var width = 250,
+                    height = 550;
                 var path = d3.geo.path();
                 var svg = d3.select(selector).append("svg")
                     .attr("width", width)
@@ -228,7 +240,7 @@
                         }) / 2;
 
                     var projection = d3.geo.mercator()
-                        .scale(3100)
+                        .scale(3500)
                         .center([centerX, centerY])
                         .translate([width / 2, height / 2]);
     
@@ -342,6 +354,8 @@
 
         drawTUN(".svg-div")
     </script>
+    <script src="js/scrolling-nav.js"></script>
+
     <div id="stats">
 
     </div>
