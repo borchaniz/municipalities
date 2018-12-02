@@ -115,7 +115,6 @@
 
 <body style="width:100vw; overflow-x:hidden;">
     <section style="background-image: url(img/cover_bg_0.jpg);" id="cover">
-<<<<<<< HEAD
         <div class="fixed-top">
 
         <img  style="margin:10px" width="160px" src="./Logos/LOGO FINAL.png"></img>
@@ -125,12 +124,7 @@
         style="font-size: 4em; font-weight: normal; padding: 30px 50px;">التونسي و الأدآت؟</a></div>
       </section>
       <section style="background:#f05f40; overflow-x:hidden;" id="fact1">
-=======
-        <h1 class="badge badge-pill badge-primary animated bounceIn" style="font-size: 4em; font-weight: normal; padding: 30px 50px;">لازمنا
-            نخلصو بلدياتنا</h1>
-    </section>
-    <section style="background:#f05f40; overflow-x:hidden;" id="fact1">
->>>>>>> 98cc15c6756bfebf72867680ad80bf56d950b822
+
         <div class="row">
             <div class="col-sm-5"><img src="img/1tnd4.png"> </div>
             <div class="col-sm-7" style="text-align: right">
@@ -140,7 +134,7 @@
                 </div>
             </div>
         </div>
-<<<<<<< HEAD
+
       </section>
       <section style="background:url(img/cover_bg_blur.jpg); background-size: cover">
         <img src="img/municipalite.png" style="width:98vw;margin:80px 0px"/>
@@ -165,27 +159,6 @@
                     <div class="modal-footer">
                         <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
                     </div>
-=======
-    </section>
-    <section style="background:url(img/cover_bg_blur.jpg); background-size: cover">
-        <img src="img/municipalite.png" style="width:98vw;margin:80px 0px" />
-    </section>
-    <div class='svg-div'></div>
-    <div class="modal fade" id="stateModal" role="dialog">
-        <div class="modal-dialog">
-
-            <!-- Modal content-->
-            <div class="modal-content">
-                <div class="modal-header">
-                    <button type="button" class="close" data-dismiss="modal">&times;</button>
-                    <h4 class="modal-title" id="state_modal_title">Modal Header</h4>
-                </div>
-                <div class="modal-body" id="state_modal_body">
-
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
->>>>>>> 98cc15c6756bfebf72867680ad80bf56d950b822
                 </div>
             </div>
 
@@ -256,58 +229,7 @@
         FOOTBALL_COST = 300
         STREET_PER_KM_COST = 10
         SCHOOL_REPAIR_COST = 50
-<<<<<<< HEAD
-            function drawTUN(selector) {
-                var width = 250,
-                    height = 550;
-                var path = d3.geo.path();
-                var svg = d3.select(selector).append("svg")
-                    .attr("width", width)
-                    .attr("height", height);
-                d3.json("tunisia_formatted.json", function (error, topology) {
-                    console.clear();
-                    var featureCollection = topojson.feature(topology, topology.objects.governorates);
-                    var bounds = d3.geo.bounds(featureCollection);
-    
-                    var centerX = d3.sum(bounds, function (d) {
-                            return d[0];
-                        }) / 2,
-                        centerY = d3.sum(bounds, function (d) {
-                            return d[1];
-                        }) / 2;
 
-                    var projection = d3.geo.mercator()
-                        .scale(3500)
-                        .center([centerX, centerY])
-                        .translate([width / 2, height / 2]);
-    
-                    path.projection(projection);
-                    var tooltip = d3.select(selector).append("div")
-                        .attr("class", "tooltip")
-                        .style("opacity", 0);
-                    svg.selectAll("path")
-                        .data(featureCollection.features)
-                        .enter().append("path")
-                        .attr("d", path)
-                        .on("mouseover", function (d) {
-                            tooltip.transition()
-                                .duration(200)
-                                .style("opacity", .9);
-                            tooltip.html(d.properties.gov_name_a)
-                                .style("left", (d3.event.layerX) + "px")
-                                .style("top", (d3.event.layerY - 28) + "px");
-                        })
-                        .on("mouseout", function (d) {
-                            tooltip.transition()
-                                .duration(500)
-                                .style("opacity", 0);
-                        })
-                        .on("click", function (d) {
-                            showState(d.properties.gov_name_a,d.id)
-                        });
-                });
-            }
-=======
         function drawTUN(selector) {
             var width = 1300,
                 height = 500;
@@ -358,7 +280,6 @@
                     });
             });
         }
->>>>>>> 98cc15c6756bfebf72867680ad80bf56d950b822
 
         function drawState(selector, id) {
             $(".modal-content").css({
