@@ -9,7 +9,7 @@ The platform is specific to each municipality, meaning, a user can see the chang
 
 ### Prerequisites
 
-Python is needed to run this project, just open your command line/ terminal depending on the Operating System you're using, navigate to the directory where the project is placed using the cd command, and finally start a python server, using the command "python -m http.server"  or simply double click run.bat or run.sh depending on your OS.
+Python is needed to run this project, just open your command line/ terminal depending on the Operating System you're using, navigate to the directory where the project is placed using the cd command, and finally start a python server, using the command "python -m http.server"  or simply double click run.bat or run.sh depending on your OS, then open localhost:8000 in your browser.
 
 ### Installing
 
