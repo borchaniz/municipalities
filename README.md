@@ -1,6 +1,6 @@
-# Hassen حسّن
+# Hassin حسّن
 
-Having noticed that only a small percentage of Tunisian citizens pay their taxes towards the municipalities by analyzing the data provided by "marsad baladiyya", The goal of Hassen platform is to encourage the citizens to start paying the taxes (الجبايات). 
+Having noticed that only a small percentage of Tunisian citizens pay their taxes towards the municipalities by analyzing the data provided by "marsad baladiyya", The goal of Hassin platform is to encourage the citizens to start paying the taxes (الجبايات). 
 
 ## Getting Started
 
