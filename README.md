@@ -21,6 +21,7 @@ You only need to install python on your machine and add it to your environment v
 * [Bootstrap](https://getbootstrap.com/) - CSS/JS Framework: Open Source
 * [JQuery](https://jquery.com/) - JS Framework: Open Source
 * [Python](https://www.python.org/) - Parsing the GeoJSON format file.
+* [Django](https://www.djangoproject.com/) - Running server.
 * [D3JS](https://d3js.org/) - JS Plugin: Data visualizing with maps: Open source.
 * [Photoshop](https://www.adobe.com/) - for creating the logo
 
