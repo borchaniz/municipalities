@@ -1,0 +1,515 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="d76dc9e0-eb70-4ea7-9260-253d43b8928d" name="Default" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/other.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hassin/landing/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Cairo-Black.ttf" beforeDir="false" afterPath="$PROJECT_DIR$/hassin/static/Cairo-Black.ttf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bootstrap/css/bootstrap-grid.css" beforeDir="false" afterPath="$PROJECT_DIR$/hassin/static/bootstrap/css/bootstrap-grid.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bootstrap/css/bootstrap-grid.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/hassin/static/bootstrap/css/bootstrap-grid.css.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bootstrap/css/bootstrap-grid.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/hassin/static/bootstrap/css/bootstrap-grid.min.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bootstrap/css/bootstrap-grid.min.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/hassin/static/bootstrap/css/bootstrap-grid.min.css.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bootstrap/css/bootstrap-reboot.css" beforeDir="false" afterPath="$PROJECT_DIR$/hassin/static/bootstrap/css/bootstrap-reboot.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bootstrap/css/bootstrap-reboot.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/hassin/static/bootstrap/css/bootstrap-reboot.css.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bootstrap/css/bootstrap-reboot.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/hassin/static/bootstrap/css/bootstrap-reboot.min.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bootstrap/css/bootstrap-reboot.min.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/hassin/static/bootstrap/css/bootstrap-reboot.min.css.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bootstrap/css/bootstrap.css" beforeDir="false" afterPath="$PROJECT_DIR$/hassin/static/bootstrap/css/bootstrap.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bootstrap/css/bootstrap.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/hassin/static/bootstrap/css/bootstrap.css.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bootstrap/css/bootstrap.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/hassin/static/bootstrap/css/bootstrap.min.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bootstrap/css/bootstrap.min.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/hassin/static/bootstrap/css/bootstrap.min.css.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bootstrap/js/bootstrap.bundle.js" beforeDir="false" afterPath="$PROJECT_DIR$/hassin/static/bootstrap/js/bootstrap.bundle.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bootstrap/js/bootstrap.bundle.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/hassin/static/bootstrap/js/bootstrap.bundle.js.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bootstrap/js/bootstrap.bundle.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/hassin/static/bootstrap/js/bootstrap.bundle.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bootstrap/js/bootstrap.bundle.min.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/hassin/static/bootstrap/js/bootstrap.bundle.min.js.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bootstrap/js/bootstrap.js" beforeDir="false" afterPath="$PROJECT_DIR$/hassin/static/bootstrap/js/bootstrap.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bootstrap/js/bootstrap.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/hassin/static/bootstrap/js/bootstrap.js.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bootstrap/js/bootstrap.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/hassin/static/bootstrap/js/bootstrap.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bootstrap/js/bootstrap.min.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/hassin/static/bootstrap/js/bootstrap.min.js.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cities/Ariana.json" beforeDir="false" afterPath="$PROJECT_DIR$/hassin/static/cities/Ariana.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cities/Ben Arous.json" beforeDir="false" afterPath="$PROJECT_DIR$/hassin/static/cities/Ben Arous.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cities/Bizerte.json" beforeDir="false" afterPath="$PROJECT_DIR$/hassin/static/cities/Bizerte.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cities/Béja.json" beforeDir="false" afterPath="$PROJECT_DIR$/hassin/static/cities/Béja.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cities/Gabès.json" beforeDir="false" afterPath="$PROJECT_DIR$/hassin/static/cities/Gabès.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cities/Gafsa.json" beforeDir="false" afterPath="$PROJECT_DIR$/hassin/static/cities/Gafsa.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cities/Jendouba.json" beforeDir="false" afterPath="$PROJECT_DIR$/hassin/static/cities/Jendouba.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cities/Kairouan.json" beforeDir="false" afterPath="$PROJECT_DIR$/hassin/static/cities/Kairouan.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cities/Kassérine.json" beforeDir="false" afterPath="$PROJECT_DIR$/hassin/static/cities/Kassérine.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cities/Kebili.json" beforeDir="false" afterPath="$PROJECT_DIR$/hassin/static/cities/Kebili.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cities/Le Kef.json" beforeDir="false" afterPath="$PROJECT_DIR$/hassin/static/cities/Le Kef.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cities/Mahdia.json" beforeDir="false" afterPath="$PROJECT_DIR$/hassin/static/cities/Mahdia.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cities/Manubah.json" beforeDir="false" afterPath="$PROJECT_DIR$/hassin/static/cities/Manubah.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cities/Monastir.json" beforeDir="false" afterPath="$PROJECT_DIR$/hassin/static/cities/Monastir.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cities/Médenine.json" beforeDir="false" afterPath="$PROJECT_DIR$/hassin/static/cities/Médenine.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cities/Nabeul.json" beforeDir="false" afterPath="$PROJECT_DIR$/hassin/static/cities/Nabeul.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cities/Sfax.json" beforeDir="false" afterPath="$PROJECT_DIR$/hassin/static/cities/Sfax.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cities/Sidi Bou Zid.json" beforeDir="false" afterPath="$PROJECT_DIR$/hassin/static/cities/Sidi Bou Zid.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cities/Siliana.json" beforeDir="false" afterPath="$PROJECT_DIR$/hassin/static/cities/Siliana.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cities/Sousse.json" beforeDir="false" afterPath="$PROJECT_DIR$/hassin/static/cities/Sousse.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cities/Tataouine.json" beforeDir="false" afterPath="$PROJECT_DIR$/hassin/static/cities/Tataouine.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cities/Tozeur.json" beforeDir="false" afterPath="$PROJECT_DIR$/hassin/static/cities/Tozeur.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cities/Tunis.json" beforeDir="false" afterPath="$PROJECT_DIR$/hassin/static/cities/Tunis.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cities/Zaghouan.json" beforeDir="false" afterPath="$PROJECT_DIR$/hassin/static/cities/Zaghouan.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cities/parse_geojson.py" beforeDir="false" afterPath="$PROJECT_DIR$/hassin/static/cities/parse_geojson.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cities/tunisia.json" beforeDir="false" afterPath="$PROJECT_DIR$/hassin/static/cities/tunisia.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cities/tunisia_formatted.json" beforeDir="false" afterPath="$PROJECT_DIR$/hassin/static/cities/tunisia_formatted.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/bootstrap.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/hassin/static/css/bootstrap.min.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/1tnd4.png" beforeDir="false" afterPath="$PROJECT_DIR$/hassin/static/img/1tnd4.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/LOGO FINAL WITH TEXT.png" beforeDir="false" afterPath="$PROJECT_DIR$/hassin/static/img/logo_hassin_with_text.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/LOGO FINAL WITH TEXT.psd" beforeDir="false" afterPath="$PROJECT_DIR$/hassin/static/img/logo_hassin_with_text.psd" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/LOGO FINAL.png" beforeDir="false" afterPath="$PROJECT_DIR$/hassin/static/img/logo_hassin.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/LOGO FINAL.psd" beforeDir="false" afterPath="$PROJECT_DIR$/hassin/static/img/logo_hassin.psd" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/LOGO-FINAL-ICON.png" beforeDir="false" afterPath="$PROJECT_DIR$/hassin/static/img/logo_hassin_icon.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/coins_many.png" beforeDir="false" afterPath="$PROJECT_DIR$/hassin/static/img/coins_many.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/coins_small.png" beforeDir="false" afterPath="$PROJECT_DIR$/hassin/static/img/coins_small.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/cover_bg.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/hassin/static/img/cover_bg.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/cover_bg_0.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/hassin/static/img/cover_bg_0.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/cover_bg_blur.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/hassin/static/img/cover_bg_blur.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/cover_bg_blur2.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/hassin/static/img/cover_bg_blur2.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/deficit.png" beforeDir="false" afterPath="$PROJECT_DIR$/hassin/static/img/deficit.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/football.png" beforeDir="false" afterPath="$PROJECT_DIR$/hassin/static/img/football.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/municipalite.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/hassin/static/img/municipalite.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/municipalite.png" beforeDir="false" afterPath="$PROJECT_DIR$/hassin/static/img/municipalite.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/road.png" beforeDir="false" afterPath="$PROJECT_DIR$/hassin/static/img/road.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/school.png" beforeDir="false" afterPath="$PROJECT_DIR$/hassin/static/img/school.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/stadium.png" beforeDir="false" afterPath="$PROJECT_DIR$/hassin/static/img/stadium.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/street.png" beforeDir="false" afterPath="$PROJECT_DIR$/hassin/static/img/street.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/Chart.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/hassin/static/js/Chart.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/Untitled-1.txt" beforeDir="false" afterPath="$PROJECT_DIR$/hassin/static/js/Untitled-1.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/bootstrap.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/hassin/static/js/bootstrap.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/d3.v3.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/hassin/static/js/d3.v3.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/jquery.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/hassin/static/js/jquery.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/scrolling-nav.js" beforeDir="false" afterPath="$PROJECT_DIR$/hassin/static/js/scrolling-nav.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/topojson.v1.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/hassin/static/js/topojson.v1.min.js" afterDir="false" />
+    </list>
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="TRACKING_ENABLED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="Script_Municipalite.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Script_Municipalite.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="339">
+              <caret line="20" column="43" selection-start-line="20" selection-start-column="43" selection-end-line="20" selection-end-column="43" />
+              <folding>
+                <element signature="e#50#69#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/hassin/landing/templates/index.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="148">
+              <caret line="332" column="27" selection-start-line="332" selection-start-column="27" selection-end-line="332" selection-end-column="27" />
+              <folding>
+                <element signature="n#style#0;n#img#0;n#div#0;n#section#0;n#body#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#section#1;n#body#0;n#!!top" expanded="true" />
+                <element signature="n#style#1;n#section#1;n#body#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#h1#0;n#div#0;n#section#3;n#body#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#img#0;n#section#3;n#body#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#0;n#body#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#0;n#div#0;n#body#0;n#!!top" expanded="true" />
+                <element signature="e#5712#5719#1#HTML" expanded="true" />
+                <element signature="n#style#0;n#div#1;n#div#1;n#div#0;n#div#0;n#div#2;n#body#0;n#!!top" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="static.py" pinned="false" current-in-tab="false">
+        <entry file="file://$USER_HOME$/Documents/KaounVenv/Lib/site-packages/django/templatetags/static.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="161">
+              <caret line="142" column="4" selection-start-line="142" selection-start-column="4" selection-end-line="142" selection-end-column="4" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="urls.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/hassin/hassin/urls.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="323">
+              <caret line="20" column="38" selection-start-line="20" selection-start-column="38" selection-end-line="20" selection-end-column="38" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="urls.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/hassin/landing/urls.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="51">
+              <caret line="5" column="17" selection-start-line="5" selection-start-column="17" selection-end-line="5" selection-end-column="17" />
+              <folding>
+                <element signature="e#0#32#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="views.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/hassin/landing/views.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="102">
+              <caret line="9" column="32" selection-start-line="9" selection-start-column="32" selection-end-line="9" selection-end-column="32" />
+              <folding>
+                <element signature="e#24#63#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="settings.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/hassin/hassin/settings.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="271">
+              <caret line="122" column="1" selection-start-line="122" selection-start-column="1" selection-end-line="122" selection-end-column="1" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+      </list>
+    </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>img</find>
+      <find>script</find>
+      <find>backg</find>
+      <find>backgr</find>
+      <find>cairo</find>
+      <find>cover</find>
+      <find>url</find>
+      <find>src</find>
+    </findStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/hassin/hassin/urls.py" />
+        <option value="$PROJECT_DIR$/hassin/landing/urls.py" />
+        <option value="$PROJECT_DIR$/hassin/landing/views.py" />
+        <option value="$PROJECT_DIR$/hassin/hassin/settings.py" />
+        <option value="$PROJECT_DIR$/hassin/landing/templates/index.html" />
+      </list>
+    </option>
+  </component>
+  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsFlowSettings">
+    <service-enabled>true</service-enabled>
+    <exe-path />
+    <other-services-enabled>true</other-services-enabled>
+    <auto-save>true</auto-save>
+  </component>
+  <component name="JsGulpfileManager">
+    <detection-done>true</detection-done>
+    <sorting>DEFINITION_ORDER</sorting>
+  </component>
+  <component name="NodePackageJsonFileManager">
+    <packageJsonPaths />
+  </component>
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="105" />
+    <option name="y" value="30" />
+    <option name="width" value="2190" />
+    <option name="height" value="1215" />
+  </component>
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="municipalities" type="b2602c69:ProjectViewProjectNode" />
+              <item name="municipalities" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="municipalities" type="b2602c69:ProjectViewProjectNode" />
+              <item name="municipalities" type="462c0819:PsiDirectoryNode" />
+              <item name="hassin" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="municipalities" type="b2602c69:ProjectViewProjectNode" />
+              <item name="municipalities" type="462c0819:PsiDirectoryNode" />
+              <item name="hassin" type="462c0819:PsiDirectoryNode" />
+              <item name="static" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="municipalities" type="b2602c69:ProjectViewProjectNode" />
+              <item name="municipalities" type="462c0819:PsiDirectoryNode" />
+              <item name="hassin" type="462c0819:PsiDirectoryNode" />
+              <item name="static" type="462c0819:PsiDirectoryNode" />
+              <item name="js" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="Scope" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="SearchEverywhereHistoryKey" value="sett&#9;FILE&#9;file://C:/Users/NAD/PycharmProjects/municipalities/hassin/hassin/settings.py" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/hassin/hassin/settings.py" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="settings.editor.selected.configurable" value="com.jetbrains.django.DjangoModulesConfigurable" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\NAD\PycharmProjects\municipalities\hassin\static" />
+      <recent name="C:\Users\NAD\PycharmProjects\municipalities\hassin\landing" />
+      <recent name="C:\Users\NAD\PycharmProjects\municipalities\hassin\landing\templates" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager">
+    <configuration default="true" type="PythonConfigurationType" factoryName="Python">
+      <module name="municipalities" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="true" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+    </configuration>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration>C:\Users\NAD\AppData\Roaming\Subversion</configuration>
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="d76dc9e0-eb70-4ea7-9260-253d43b8928d" name="Default" comment="" />
+      <created>1549146758761</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1549146758761</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
+    <editor active="true" />
+    <layout>
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
+      <window_info anchor="right" x="0" y="0" width="337" height="638" id="Documentation" order="5" side_tool="true" weight="0.3295302" />
+      <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Run" order="2" />
+      <window_info anchor="bottom" id="Version Control" order="7" />
+      <window_info anchor="bottom" id="Python Console" order="7" weight="0.32905984" />
+      <window_info anchor="bottom" id="Terminal" order="7" visible="true" weight="0.21225071" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25302014" />
+      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
+      <window_info anchor="right" id="Database" order="3" />
+      <window_info anchor="right" id="SciView" order="4" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Find" order="1" />
+    </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/Script_Municipalite.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="20" column="43" selection-start-line="20" selection-start-column="43" selection-end-line="20" selection-end-column="43" />
+          <folding>
+            <element signature="e#50#69#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/hassin/hassin/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="20" column="38" selection-start-line="20" selection-start-column="38" selection-end-line="20" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/hassin/landing/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="5" column="17" selection-start-line="5" selection-start-column="17" selection-end-line="5" selection-end-column="17" />
+          <folding>
+            <element signature="e#0#32#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/hassin/landing/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="9" column="32" selection-start-line="9" selection-start-column="32" selection-end-line="9" selection-end-column="32" />
+          <folding>
+            <element signature="e#24#63#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/hassin/hassin/settings.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="663">
+          <caret line="39" column="12" selection-start-line="39" selection-start-column="12" selection-end-line="39" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/hassin/landing/templates/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="17" lean-forward="true" selection-start-column="17" selection-end-column="17" />
+          <folding>
+            <element signature="n#style#0;n#img#0;n#div#0;n#section#0;n#body#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#section#1;n#body#0;n#!!top" expanded="true" />
+            <element signature="n#style#1;n#section#1;n#body#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#h1#0;n#div#0;n#section#3;n#body#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#img#0;n#section#3;n#body#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#body#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#0;n#body#0;n#!!top" expanded="true" />
+            <element signature="e#5712#5719#1#HTML" expanded="true" />
+            <element signature="n#style#0;n#div#1;n#div#1;n#div#0;n#div#0;n#div#2;n#body#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/hassin/landing/apps.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/hassin/static/cities/Siliana.json">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/hassin/landing/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="5" column="17" selection-start-line="5" selection-start-column="17" selection-end-line="5" selection-end-column="17" />
+          <folding>
+            <element signature="e#0#32#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/hassin/landing/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="9" column="32" selection-start-line="9" selection-start-column="32" selection-end-line="9" selection-end-column="32" />
+          <folding>
+            <element signature="e#24#63#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/hassin/hassin/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="20" column="38" selection-start-line="20" selection-start-column="38" selection-end-line="20" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/hassin/static/img/logo_hassin.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$USER_HOME$/Documents/KaounVenv/Lib/site-packages/django/templatetags/static.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="161">
+          <caret line="142" column="4" selection-start-line="142" selection-start-column="4" selection-end-line="142" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/hassin/hassin/settings.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="271">
+          <caret line="122" column="1" selection-start-line="122" selection-start-column="1" selection-end-line="122" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Script_Municipalite.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="339">
+          <caret line="20" column="43" selection-start-line="20" selection-start-column="43" selection-end-line="20" selection-end-column="43" />
+          <folding>
+            <element signature="e#50#69#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/hassin/static/js/topojson.v1.min.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="1" column="141" selection-start-line="1" selection-start-column="141" selection-end-line="1" selection-end-column="141" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/hassin/landing/templates/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="148">
+          <caret line="332" column="27" selection-start-line="332" selection-start-column="27" selection-end-line="332" selection-end-column="27" />
+          <folding>
+            <element signature="n#style#0;n#img#0;n#div#0;n#section#0;n#body#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#section#1;n#body#0;n#!!top" expanded="true" />
+            <element signature="n#style#1;n#section#1;n#body#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#h1#0;n#div#0;n#section#3;n#body#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#img#0;n#section#3;n#body#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#body#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#0;n#body#0;n#!!top" expanded="true" />
+            <element signature="e#5712#5719#1#HTML" expanded="true" />
+            <element signature="n#style#0;n#div#1;n#div#1;n#div#0;n#div#0;n#div#2;n#body#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>
